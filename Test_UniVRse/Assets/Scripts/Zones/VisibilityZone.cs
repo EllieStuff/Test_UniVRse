@@ -144,7 +144,7 @@ public class VisibilityZone : MonoBehaviour
     /// Debug Functions
     void DebugTriggerZoneMessage(bool _entersZone)
     {
-        if (!debugParameters.triggerZoneMessageEnabled) return;
+        if (!debugParameters.playerTriggersZoneMessage) return;
 
         if (_entersZone) Debug.Log("VisibilityZone Debug Message: Player has entered " + gameObject.name);
         else Debug.Log("VisibilityZone Debug Message: Player has exit " + gameObject.name);
@@ -155,11 +155,11 @@ public class VisibilityZone : MonoBehaviour
         debugParameters = _debugParameters;
         if (Application.isPlaying)
         {
-            EnableAuxiliarMesh(debugParameters.auxiliarMeshEnabledInPlayMode);
+            EnableAuxiliarMesh(debugParameters.auxiliaryMeshEnabledInPlayMode);
         }
         else
         {
-            EnableAuxiliarMesh(debugParameters.auxiliarMeshEnabledInEditMode);
+            EnableAuxiliarMesh(debugParameters.auxiliaryMeshEnabledInEditMode);
         }
 
     }

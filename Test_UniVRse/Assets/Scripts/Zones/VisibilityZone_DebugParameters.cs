@@ -5,22 +5,22 @@ using UnityEngine;
 [System.Serializable]
 public class VisibilityZone_DebugParameters
 {
-    public bool triggerZoneMessageEnabled = false;
-    public bool auxiliarMeshEnabledInEditMode = false;
-    public bool auxiliarMeshEnabledInPlayMode = false;
+    public bool playerTriggersZoneMessage = false;
+    public bool auxiliaryMeshEnabledInEditMode = false;
+    public bool auxiliaryMeshEnabledInPlayMode = false;
 
     public VisibilityZone_DebugParameters() { }
     public VisibilityZone_DebugParameters(VisibilityZone_DebugParameters _debugParameters)
     {
-        triggerZoneMessageEnabled = _debugParameters.triggerZoneMessageEnabled;
-        auxiliarMeshEnabledInEditMode = _debugParameters.auxiliarMeshEnabledInEditMode;
-        auxiliarMeshEnabledInPlayMode = _debugParameters.auxiliarMeshEnabledInPlayMode;
+        playerTriggersZoneMessage = _debugParameters.playerTriggersZoneMessage;
+        auxiliaryMeshEnabledInEditMode = _debugParameters.auxiliaryMeshEnabledInEditMode;
+        auxiliaryMeshEnabledInPlayMode = _debugParameters.auxiliaryMeshEnabledInPlayMode;
     }
-    public VisibilityZone_DebugParameters(bool _triggerZoneWarningEnabledInPlayMode, bool _auxiliarMeshEnabledInEditMode, bool _auxiliarMeshEnabledInPlayMode)
+    public VisibilityZone_DebugParameters(bool _playerTriggersZoneMessage, bool _auxiliaryMeshEnabledInEditMode, bool _auxiliaryMeshEnabledInPlayMode)
     {
-        triggerZoneMessageEnabled = _triggerZoneWarningEnabledInPlayMode;
-        auxiliarMeshEnabledInEditMode = _auxiliarMeshEnabledInEditMode;
-        auxiliarMeshEnabledInPlayMode = _auxiliarMeshEnabledInPlayMode;
+        playerTriggersZoneMessage = _playerTriggersZoneMessage;
+        auxiliaryMeshEnabledInEditMode = _auxiliaryMeshEnabledInEditMode;
+        auxiliaryMeshEnabledInPlayMode = _auxiliaryMeshEnabledInPlayMode;
     }
 
 }

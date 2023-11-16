@@ -6,14 +6,15 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour
 {
     [SerializeField] GameObject enemyPrefab;
-    [SerializeField] BoxCollider spawnArea;
+    [SerializeField] BoxCollider spawnArea, moveArea;
 
-    AreaLimits spawnAreaLimits;
+    AreaLimits spawnAreaLimits, moveAreaLimits;
 
     // Start is called before the first frame update
     void Start()
     {
         spawnAreaLimits = new AreaLimits(spawnArea);
+        moveAreaLimits = new AreaLimits(moveArea);
     }
 
     // Update is called once per frame
@@ -29,7 +30,7 @@ public class EnemyManager : MonoBehaviour
                 return;
             }
 
-            enemyController.SpawnInit(spawnAreaLimits);
+            enemyController.SpawnInit(moveAreaLimits);
         }
     }
 

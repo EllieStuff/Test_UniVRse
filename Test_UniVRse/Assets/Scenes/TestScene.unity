@@ -870,9 +870,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   debugParameters:
-    triggerZoneMessageEnabled: 1
-    auxiliarMeshEnabledInEditMode: 1
-    auxiliarMeshEnabledInPlayMode: 0
+    playerTriggersZoneMessage: 1
+    auxiliaryMeshEnabledInEditMode: 1
+    auxiliaryMeshEnabledInPlayMode: 0
 --- !u!1001 &1946458492
 PrefabInstance:
   m_ObjectHideFlags: 0
