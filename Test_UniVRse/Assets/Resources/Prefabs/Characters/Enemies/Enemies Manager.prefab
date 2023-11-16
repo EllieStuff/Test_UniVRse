@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5381742718442062020, guid: b6c70bc1e2c7f4f42ad978b69aeba603, type: 3}
   spawnArea: {fileID: 6332125434664654843}
+  moveArea: {fileID: 6332125434664654843}
 --- !u!65 &6332125434664654843
 BoxCollider:
   m_ObjectHideFlags: 0
